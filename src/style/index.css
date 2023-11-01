@@ -1,0 +1,171 @@
+html {
+  height: 100%;
+}
+
+body  {
+  box-sizing: border-box;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  /*min-height: 100%;*/
+}
+
+h1  {
+  text-align: left;
+  padding-top: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+/*header {
+  width: 100%;
+  background-color: darkblue;
+  position: fixed;
+  z-index: 1;
+  height: 40px;
+  padding: 5px;
+  vertical-align: middle;
+  color: white;
+  top: 0;
+}*/
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: black;
+  text-decoration: none;
+}
+
+header img {
+  height: 80px;
+  margin-left: 40px;
+}
+
+main {
+  margin: 60px auto;
+  width: 98%;
+  position: relative;
+  padding: 10px;
+}
+
+.boxes {
+  margin: 40px auto;
+  width: 250px;
+  height: 250px;
+  border: 1px solid gray;
+}
+
+.boxes p {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  position: fixed;
+  padding: 5px 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 0px 25px 0px black;
+}
+
+.foot {
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+/*img {
+  height: 100px;
+}*/
+
+.navbar {
+  font-weight: bold;
+}
+
+.navbar a:link { color: black; }
+.navbar a:visited { color: black; }
+.navbar a:hover { color: lightseagreen; }
+.navbar a:active { color: black; }
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  border-left: solid 1px gray;
+  border-top: solid 1px gray;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+.product-filter {
+  display: flex;
+}
+
+.product-filter h1 {
+  flex-grow: 1;
+}
+
+.sort {
+  display: flex;
+  margin-top: 20px;
+}
+
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+#divSortby {
+  margin-left: 5px;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+input[type=password] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+}
